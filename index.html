@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html> 
+<head>
+
+ <title>Blue1647 Class Example-Index 5</title>
+ <style> 
+ <link rel="icon" href="images/favicon.ico" type= "image/x-icon">
+
+ html {
+ 	overflow: hidden;
+ 	height: 100%;
+ 	background: #bcbdc7;
+ }
+
+ body {
+ 	overflow: auto;
+ 	height: 100%;
+ 	width: 1100px;
+ 	margin: 0 auto; /* center */
+ 	padding: 0;
+ 	border: 1px solid #474747;
+ 	border-width: 0 3px;
+ 	background: #fff;
+ 	font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /*reduce the size of the background image height */
+ #container-header {
+  float: left;
+  background: url(images/pecanbar.jpg);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height:800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+container-header h1{
+  width: auto;
+  height: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+  color:#ffff00;
+}
+
+.row{
+  width: auto;
+  float: left;
+  height: auto;
+}
+
+.container{
+  width: 505px;
+  margin: 10px 12px;
+  padding: 5px;
+  float: left;
+  background: #fff;
+  border: 3px solid #663333;
+}
+
+h1,h2,h3,h4,h5,h6{
+  width: auto;
+  height:  20px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #660000;
+  color: #ffff00;
+}
+  /*changed address width to 100%,chan*/
+  /*adjusted width to cover entire screen, got background color from header image*/
+  /*this is the space that holds the buttons*/
+  #address{
+ 	float: left;
+ 	width: 1100px;
+ 	padding:0px;
+  background: url(images/flour.jpg);
+  background-repeat: no-repeat; 
+ 	margin: 0px;
+ }
+ /* button image in the list attribute only*/
+ /*picture in inside of button here */
+ #address li{
+ 	float: left;
+  width: 150px;
+  height: 75px;
+  display: block;
+ 	padding: 0px 3px 0px 0px;
+ 	background: url(images/pecanbar2.jpg);
+  background-repeat: no-repeat;
+ 	text-decoration: none;
+ 	list-style: none;
+  text-align: center;
+
+ }
+ /* remove background image and added padding top to move the text content. increased font to 16px made bolder with text align */
+ #address li a{
+ 	float: left;
+ 	width: 150px;
+  padding-top: 33px;
+  height: 75px;
+ 	color: black;
+ 	font-size: 16px;
+  font-weight: bolder;
+ 	text-align: center;
+ 	text-decoration: none;
+ 	list-style:none;
+  }
+  /*controls how the cursor acts as it hovers */
+  /* background hover image is here */
+  #address li a:hover{
+  	float: left;
+  	font-size: 150px;
+    height: 75px;
+  	padding-top: 33px;
+    height: 75px;
+    color: #ff0;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;    
+    text-decoration:none;
+  	list-style:none;
+  	background: url(images/spoon.jpg);
+  	background-repeat: no-repeat;
+  }
+  /*removed image from here and added border to the top because padding pushed the border behind the image */
+  #address li a.active{
+  	float: left;
+  	font-size: 150px;
+  	padding-top: 33px;
+    margin: 0px;
+    height: 75px;
+    color: red;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+  	text-decoration: none;
+  	list-style: none;
+    border-top: 3px solid yellow;
+   }
+img{
+  float: left;
+  margin: 10px 25px;
+  border: #f00;
+  text-align: right;
+}
+footer{
+  width: 100%;
+  height: 120px;
+  clear: both;
+  padding: 5px;
+  color: #663333;
+}
+footer ul{
+  text-align: center;
+}
+footer li{
+  float: left;
+  width: 125px;
+  height: 70px;
+  display: block;
+  padding: 15px 0px 0px 25px;
+  text-decoration: none;
+  list-style: none;
+} 
+footer p{
+  text-align: center;
+  font-weight: bolder;
+}
+/*removed background image and added padding top to move the text content. increased font to 16px made bolder with text align */
+footer li a{
+float: left;
+width: 125px;
+padding: 35px 0 0 10px;
+height: 70px;
+background: url(images/pecanbar2.jpg);
+background-repeat: no-repeat;
+background-position: center;
+color: black;
+font-size: 18px;
+font-weight: bolder;
+text-align: center;
+text-decoration: none;
+list-style: none;
+}
+/*background hover image is here */
+footer li a:hover{
+  float: left;
+  width: 125px;
+  height: 70px;
+  padding-top: 35px;
+  color: red;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+}
+</style>
+ 
+</head>
+ <body> 
+
+
+
+	<ul id="address">
+		<li> <a href="index.html">index</a></li>
+		<li> <a href="index1.html">index 1</a></li>
+		<li> <a href="index2.html">index 2</a></li>
+		<li> <a href="index3.html">index 3</a></li>
+		<li> <a href="index4.html">index 4</a></li>
+    <li> <a class="active"href="index5.html">index 5</a></li>
+    <li> <a href="#">Top</a></li>
+		</ul></div>
+
+<div id="container-header">
+  <h1>Pecan Bars<h1>
+</div>
+<div class="row">
+<div class="container">
+<h2>Flour</h2> 
+<img src="images/flour.jpg" alt="Poster 1">
+
+<p>You will need 2 1/2 cups flour for the crust of this recipe.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+</div>
+
+<div class="row">
+<div class="container">
+<h2>Brown Sugar</h2>
+<img src="images/brownsugarx.jpg" alt="Poster 2">
+
+<p>You will need 2 cups of packed brown sugar.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+</div>
+</div>
+
+<div class="row">
+<h2>Eggs</h2>
+
+<p><img src="images/eggs.jpg" alt="Poster 3">
+
+You will need 3 room temperature eggs.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+<hr>
+</div>
+
+<div class="row">
+<h2>Pecans</h2>
+
+<p><img src="images/pecans.jpg" alt="Poster 4">You will need 3 cups of pecan halves, divided. You will want to chop 2 cups of these and save 1 cup of the pecan halves.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+<hr>
+</div>
+<div class="row">
+<h2>Butter</h2>
+
+<p><img src="images/butter.jpg" alt="Poster 5">You will need a total of 2 cups of butter (2 sticks). 1 1/2 cup will be used in the crust and 1/2 cup will be used in the filling.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+<hr>
+</div>
+<div class="row">
+<h2>How to make Pecan Bars</h2>
+<p>
+<iframe width="850" height="450" src="https://www.youtube.com/embed/4JsppAZ-nqA" frameborder="0" allowfullscreen marginwidth="10px" alt="Poster 6"></iframe>
+
+</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+
+<p>This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.This is where you would put your text.</p>
+</div>
+<footer>
+<p>Class Example of a Static Website &copy; Vicki Henley 2016</p>
+   <ul>
+    <li> <a href="index.html">index</a></li>
+    <li> <a href="index1.html">index 1</a></li>
+    <li> <a href="index2.html">index 2</a></li>
+    <li> <a href="index3.html">index 3</a></li>
+    <li> <a href="index4.html">index 4</a></li>
+    <li> <a href="index5.html">index 5</a></li>
+    <li> <a href="#">Top</a></li>
+    </ul> 
+</footer>
+</body>
+</html>
